@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shayan Khan | Web Developer & Graphic Designer</title>
+
+<meta name="description" content="Shayan Khan is a web developer and graphic designer specializing in modern websites, WordPress, logos and banners.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d19;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    background: #101827;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #080d19, #102a52);
+}
+
+.hero h1 {
+    font-size: clamp(35px, 8vw, 60px);
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00bfff;
+}
+
+.hero h2 {
+    color: #d2d9e6;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #aab8cf;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00bfff;
+    color: #06101e;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #008fcc;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #00bfff;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #b9c5d8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #121d30;
+    padding: 35px 25px;
+    border-radius: 15px;
+    border: 1px solid #223550;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+}
+
+.card h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b9c5d8;
+}
+
+.portfolio {
+    background: #0d1627;
+}
+
+.project {
+    background: #16243a;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.project h3 {
+    color: #00bfff;
+}
+
+.project p {
+    color: #b9c5d8;
+    margin-top: 10px;
+}
+
+.contact p {
+    color: #b9c5d8;
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #101827;
+    padding: 25px;
+    text-align: center;
+    color: #9aa9bf;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .hero h2 {
+        font-size: 18px;
